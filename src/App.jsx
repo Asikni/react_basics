@@ -3,7 +3,7 @@ import CountButton from "./countBtn.jsx";
 import Gallery from "./Gallery.jsx";
 import PackingList from "./item.jsx";
 import ListPeople from "./mapPeople.jsx";
-
+import Sculpture from "./sculpture.jsx";
 import { useState } from "react";
 
 const products = [
@@ -47,7 +47,7 @@ export default function ShoppingList() {
       <Gallery image={img} />
       <PackingList />
       <ListPeople style={{ margin: "10px", fontSize: "16px", color: "blue" }} />
-
+      <Sculpture />
       <MyButton text="place" />
       <MyButton
         text="hello"
