@@ -1,6 +1,9 @@
 import MyButton from "./Button.jsx";
 import CountButton from "./countBtn.jsx";
 import Gallery from "./Gallery.jsx";
+import PackingList from "./item.jsx";
+import ListPeople from "./mapPeople.jsx";
+
 import { useState } from "react";
 
 const products = [
@@ -42,6 +45,8 @@ export default function ShoppingList() {
       <CountButton count={count} onClick={handleCount} />
       <CountButton count={count} onClick={handleCount} />
       <Gallery image={img} />
+      <PackingList />
+      <ListPeople style={{ margin: "10px", fontSize: "16px", color: "blue" }} />
 
       <MyButton text="place" />
       <MyButton
