@@ -6,6 +6,7 @@ import ListPeople from "./mapPeople.jsx";
 import Sculpture from "./sculpture.jsx";
 import TrafficLight from "./trafficLight.jsx";
 import Counter from "./stateAsSnapShot.jsx";
+import BucketList from "./artBucketList.jsx";
 import { useState } from "react";
 
 const products = [
@@ -54,6 +55,7 @@ export default function ShoppingList() {
         <TrafficLight />
       </div>
       <Counter />
+      <BucketList />
       <MyButton text="place" />
       <MyButton
         text="hello"
