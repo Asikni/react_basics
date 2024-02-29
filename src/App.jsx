@@ -4,6 +4,8 @@ import Gallery from "./Gallery.jsx";
 import PackingList from "./item.jsx";
 import ListPeople from "./mapPeople.jsx";
 import Sculpture from "./sculpture.jsx";
+import TrafficLight from "./trafficLight.jsx";
+import Counter from "./stateAsSnapShot.jsx";
 import { useState } from "react";
 
 const products = [
@@ -48,6 +50,10 @@ export default function ShoppingList() {
       <PackingList />
       <ListPeople style={{ margin: "10px", fontSize: "16px", color: "blue" }} />
       <Sculpture />
+      <div style={{ display: "flex" }}>
+        <TrafficLight />
+      </div>
+      <Counter />
       <MyButton text="place" />
       <MyButton
         text="hello"
