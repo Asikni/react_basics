@@ -2,9 +2,10 @@ import { useState } from "react";
 import { sculptureList } from "./sculpturedata.js";
 
 export default function Sculpture() {
+  
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
-  const hasNext = index < sculptureList.length - 1;
+  const hasNext = index < sculptureList.length - 1; //true or false
 
   function handleNextClick() {
     if (hasNext) {
@@ -21,7 +22,16 @@ export default function Sculpture() {
   let sculpture = sculptureList[index];
   return (
     <>
-      <button onClick={handleNextClick}>Next</button>
+      <div
+        style={{
+          border: "1px solid red",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
+      >
+        <button onClick={handleNextClick}>Next</button>
+      </div>
       <h2>
         <i>{sculpture.name} </i>
         by {sculpture.artist}

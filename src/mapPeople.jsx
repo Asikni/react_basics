@@ -1,13 +1,11 @@
 import { people } from "./data"; // for object and array
 
 export default function ListPeople({ style }) {
-  const listItems = people.map((person) => (
-    <ul>
-      <li key={person.id} style={{ ...style }}>
-        {person.name} is a {person.profession} and his/her accomplishment is{" "}
-        {person.accomplishment}
-      </li>
-    </ul>
+  const listItems = people.map((person, index) => (
+    <li key={index} style={{ ...style }}>
+      {person.name} is a {person.profession} having Id {person.id} and his/her
+      accomplishment is {person.accomplishment}
+    </li>
   ));
   return (
     <article>
