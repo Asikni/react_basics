@@ -7,6 +7,7 @@ import Sculpture from "./sculpture.jsx";
 import TrafficLight from "./trafficLight.jsx";
 import Counter from "./stateAsSnapShot.jsx";
 import BucketList from "./artBucketList.jsx";
+import Form from "./form.jsx";
 import { useState } from "react";
 
 const products = [
@@ -63,6 +64,7 @@ export default function ShoppingList() {
       />
 
       <ul> {listItems}</ul>
+      <Form />
     </div>
   );
 }
